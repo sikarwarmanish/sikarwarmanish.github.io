@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/706ff3beed.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Manish Singh</title>
+  </head>
+  <body>
+    <!-- navigation menu start -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#home">Portfolio</a></div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="cancel-button">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/manish.singh2003/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/manishsinghsikarwar"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/sikarwarmanish"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="menu-button">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text">
+          <div class="text-one">Hello,</div>
+          <div class="text-two">I'm Manish Singh</div>
+          <div class="text-three">Web Developer</div>
+          <div class="text-four">AIT Pune</div>
+        </div>
+        <div class="button">
+          <button>Hire me</button>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="images/about.jpg" alt="">
+          </div>
+          <div class="right">
+            <div class="topic">Development is my passion</div>
+            <p>This is Manish , a pre-final year student at Army Institute of Technology, Pune.I am a mechanical engineer by brain but a web developer by heart. I am learning new technologies everyday to make me an expert in this field. My passion is to create web applications that can create an positive impact on mankind. I am fascinated towards Entrepreneurship & Innovation. <bR>
+              Trying to implement a startup idea...</p>
+            <div class="button">
+              <button>Get CV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title"><span>My Skills</span></div>
+        <div class="boxes">
+          <div class="box">
+          <div class="icon">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <div class="topic">Front End Development</div>
+          <p>HTML<br>CSS<br>Bootstrap<br>React</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-user-cog"></i>
+            </div>
+            <div class="topic">Back End Development</div>
+            <p>NodeJS<br>Express<br>Git & Github<br>APIs & DataBases</p>
+            </div>
+            
+            <div class="box">
+              <div class="icon">
+                <i class="fab fa-python"></i>
+              </div>
+              <div class="topic">Programming Languages</div>
+              <p>C++<br>Python<br>JavaScript</p>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <i class="fas fa-drafting-compass"></i>
+                </div>
+                <div class="topic">Mechanical Engineering</div>
+                <p>3D-Modeling(CATIA V5)<br>Strength of Materials<br>Fluid Mechanics<br>Thermodynamics  etc...</p>
+                </div>
+              
+                
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="content">
+        <div class="title"><span>My Projects</span></div>
+        <div class="boxes">
+          <div class="box">
+          <div class="icon">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <div class="topic">Portfolio</div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam labore quam, nesciunt doloremque nulla qui dignissimos error voluptates rerum quia.</p>
+          <button>View Demo</button>
+          <button>Source Code</button>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-user-cog"></i>
+            </div>
+            <div class="topic">Zomato-Clone</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quidem ipsa iste! Vel, ea. A suscipit ea esse sapiente debitis?</p>
+            <button>View Demo</button>
+          <button>Source Code</button>
+            </div>
+            
+            
+                
+              
+                
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="title"><span>Contact Me</span></div>
+      <div class="form-content">
+        <!-- <div class="title"><span>Contact Me</span></div> -->
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <h2>GET IN TOUCH</h2>
+          <h3>Having an Entrepreneurship mindset?</h3>
+          <input type="text"  id="name" placeholder="Your Name" required>
+          <input type="email"  id="email" placeholder="Email ID" required>
+          <input type="text"  id="phone" placeholder="Mobile No." required>
+          <textarea  id="message"  rows="4" placeholder="Share your views & ideas"></textarea>
+          <button type="submit">Send</button>
+        </form>
+       
+      </div>
+    </section>
+    
+
+    <script src="js/main.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "manishsinghsikarwar786@gmail.com",
+    Password : "gjvhmatrpmkpkyqc",
+    To : 'manishsinghsikarwar786@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body :"Name: "+ document.getElementById("name").value 
+     + "<br> Email: "+ document.getElementById("email").value
+     + "<br> Phone No: "+ document.getElementById("phone").value
+     + "<br> Message: "+ document.getElementById("message").value
+}).then(
+  message => alert("Message sent successfully")
+);
+      }
+    </script>
+  </body>
+</html>

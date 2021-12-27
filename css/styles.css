@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    font-family: 'Ubuntu' , sans-serif;
+    transition: all 0.4s ease;
+}
+nav.sticky{
+    padding: 13px 0;
+    background: #4070F4;
+
+}
+nav .navbar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .navbar .logo a{
+    font-size: 40px;
+    font-weight: 500;
+    color: #4070F4;
+}
+nav.sticky .navbar .logo a{
+    color: #fff;
+}
+nav .navbar .menu{
+    display: flex;
+}
+nav .navbar .menu li{
+    margin: 0 8px;
+    list-style: none;
+}
+.navbar .menu li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #0E2431;
+    transition: all 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: #4070F4;
+}
+
+nav.sticky .navbar .menu li a{
+    color: #fff;
+}
+nav.sticky .navbar .menu li a:hover{
+    color: #0E2431;
+}
+.navbar .media-icons a{
+    font-size: 18px;
+    margin: 0 6px;
+    color: #4070F4;
+}
+nav.sticky .navbar .media-icons a{
+    color: #fff;
+}
+nav .menu-button,
+.navbar .cancel-button{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 30px;
+    top: 20px;
+    display: none;
+}
+nav .menu-button{
+    color: #4070F4;
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url("../images/background.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu' , sans-serif;
+
+}
+.home .home-content{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home .text-one{
+    font-size: 25px;
+    color: #0E2431;
+}
+.home .text-two{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    color: #0E2431;
+}
+.home .text-three{
+    font-size: 40px;
+    color: #0E2431;
+}
+.home .text-four{
+    font-size: 23px;
+    margin: 5px 0;
+    color: #0E2431;
+}
+.home .button button{
+    outline: none;
+    color: #fff;
+    background: #4070F4;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.home .button button:hover{
+    color: #4070F4;
+    background-color: #fff;
+    border-color: #4070F4;
+}
+section{
+    padding-top: 40px;
+}
+section .content{
+    width: 80%;
+    margin: 40px auto;
+    
+    
+    font-family: 'Poppins' , sans-serif;
+}
+.about .about-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+section .title span{
+    font-size: 30px;
+    font-weight: 600;
+    
+    position: relative;
+}
+section .title span::before,
+section .title span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #4070F4;
+}
+section .title span::after{
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -7px;
+}
+
+.about .about-details .left{
+    width: 45%;
+}
+
+.about .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+
+}
+.about-details .right{
+    width: 55%;
+}
+section .topic{
+    font-size: 25px;
+    font-weight: 500;
+    color: #0E2431;
+    margin-bottom: 10px;
+}
+.about-details .right p{
+    color: #0E2431;
+    text-align: justify;
+}
+section .button button{
+    outline: none;
+    color: #fff;
+    background: #4070F4;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin: 16px 0;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+section .button button:hover{
+    color: #4070F4;
+    background-color: #fff;
+    border-color: #4070F4;
+}
+
+.skills .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills .boxes .box{
+    width: calc(100% / 4 - 20px);
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px 30px;
+    transition: all 0.4s ease;
+}
+.skills .boxes .box .icon{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: #4070F4;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+.skills .boxes .box:hover{
+    background: #4070F4;
+    color: #fff;
+}
+.skills .boxes .box:hover .icon{
+    background: #fff;
+    color: #4070F4;
+}
+.skills .boxes .box:hover .topic{
+    color: #fff;
+}
+
+/* projects section styling */
+
+.projects .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.projects .boxes .box{
+    width: calc(100% / 4 - 20px);
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px 30px;
+    transition: all 0.4s ease;
+}
+.projects .boxes .box .icon{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: #4070F4;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+.projects .boxes .box:hover{
+    background: #4070F4;
+    color: #fff;
+}
+.projects .boxes .box:hover .icon{
+    background: #fff;
+    color: #4070F4;
+}
+.projects .boxes .box:hover .topic{
+    color: #fff;
+}
+
+/* contact section styling */
+
+section .form-content{
+    width: 100%;
+    height: 100vh;
+    background:#4d94ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    border-radius: 10px;
+}
+form h3{
+    color: #4070F4;
+    font-weight: 1200;
+    margin-bottom: 20px;
+}
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background:#f5f5f5;
+    font-size: 16px;
+}
+form button{
+    padding: 15px;
+    background: #4070F4;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 250px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width: 1190px) {
+    .about .content{
+        width: 85%;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .about .about-details {
+      justify-content: center;
+      flex-direction: column;
+    }
+    .about .about-details .left {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    .about-details .right {
+      width: 90%;
+      margin: 40px 0;
+    }
+    .skills .boxes .box {
+        margin: 20px 0;
+        width: calc(100% / 2 - 20px);
+      }
+      .projects .boxes .box {
+        margin: 20px 0;
+        width: calc(100% / 2 - 20px);
+      }
+
+}
+@media(max-width: 900px) {
+    .about .left img{
+        height: 350px;
+        width: 350px;
+}
+}
+
+@media(max-width: 750px) {
+    nav .navbar .menu{
+        position: absolute;
+        left: 100%;
+        top: 0;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        background: #0E2431;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        transition: all 0.5s ease;
+    }
+    nav .navbar.active .menu{
+        left: 0;
+
+    }
+    .navbar .menu li a{
+        display: block;
+        font-size: 23px;
+        color: #fff;
+        margin: 10px 0;
+    }
+    .navbar .media-icons a{
+        display: none;
+    }
+nav .menu-button,
+.navbar .cancel-button{
+    display: block;
+}
+.home .text .text-two{
+    font-size: 65px;
+}
+.home .text .text-three{
+    font-size: 35px;
+}
+.skills .boxes .box, .projects .boxes .box{
+    margin: 20px 0;
+    width: 100%;
+  }
+
+}
+@media(max-width: 514px){
+    .home .text-two{
+        font-size: 55px;
+    }
+    .home .text-three{
+        font-size: 33px;
+    }
+}
